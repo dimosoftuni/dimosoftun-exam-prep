@@ -40,6 +40,8 @@ jobs:
     - name: Install the dependencies
       run: npm install
     - name: Install Playwright browsers
-      run: npx playwright install 
+      run: npx playwright install
+    - name: Start the application
+      run: npm start &
     - name: Run UI tests
       run: npm run test:ui
